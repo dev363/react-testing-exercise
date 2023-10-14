@@ -58,10 +58,10 @@
     "prettier": "^3.0.3"
   },
   "lint-staged": {
-    "*.{ts|tsx}": [
+    "*.{ts,tsx}": [
       "eslint"
     ],
-    "*.{ts|tsx|css|scss}": [
+    "*.{ts,tsx,css,scss}": [
       "format"
     ]
   }
