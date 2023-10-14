@@ -50,7 +50,7 @@ describe("Application", () => {
       expect(isSelect).toBeInTheDocument();
 
       const isCheckbox2 = screen.getByLabelText(
-        "I agree to the terms and conditions",
+        "I agree to the terms and conditions"
       );
       expect(isCheckbox2).toBeInTheDocument();
     });
