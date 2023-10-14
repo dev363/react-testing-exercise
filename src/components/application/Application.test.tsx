@@ -67,7 +67,7 @@ describe("Application", () => {
     test("check button", () => {
       render(<Application />);
       const isButton = screen.getByRole("button");
-      expect(isButton).toBeDisabled();
+      expect(isButton).not.toBeEnabled();
     });
   });
 });
