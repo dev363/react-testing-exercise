@@ -1,4 +1,4 @@
-import { render, screen, act, logRoles } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Counter } from "./Counter";
 
@@ -19,9 +19,9 @@ describe("Counter", () => {
     userEvent.setup();
     render(<Counter />);
     const isButton = screen.getByRole("button", { name: "Increment" });
-    await act(async () => {
-      await userEvent.click(isButton);
-    });
+
+    await userEvent.click(isButton);
+
     // await act(async () => {
     //   await userEvent.click(isButton); // For 2 time click
     // });
@@ -32,14 +32,13 @@ describe("Counter", () => {
     userEvent.setup();
     render(<Counter />);
     const inputElement = screen.getByRole("spinbutton");
-    await act(async () => {
-      await userEvent.type(inputElement, "10");
-    });
+
+    await userEvent.type(inputElement, "10");
     expect(inputElement).toHaveValue(10);
+
     const setButton = screen.getByRole("button", { name: "Set" });
-    await act(async () => {
-      await userEvent.click(setButton);
-    });
+    await userEvent.click(setButton);
+
     const isCounter = screen.getByRole("heading", { level: 1 });
     expect(isCounter).toHaveTextContent("10");
   });
@@ -66,9 +65,7 @@ describe("Counter", () => {
 
     const input = screen.getByLabelText(/upload file/i);
 
-    await act(async () => {
-      await userEvent.upload(input, file);
-    });
+    await userEvent.upload(input, file);
 
     expect(input.files[0]).toStrictEqual(file);
     expect(input.files.item(0)).toStrictEqual(file);

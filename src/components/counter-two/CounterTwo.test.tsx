@@ -1,9 +1,9 @@
-import { act, logRoles, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { CounterTwo } from "./CounterTwo";
 import userEvent from "@testing-library/user-event";
 
 describe("Counter Two", () => {
-  test("test render correct", () => {
+  test("Counter Two test render correct", () => {
     render(<CounterTwo count={0} />);
     const isHeading = screen.getByRole("heading");
     expect(isHeading).toHaveTextContent("Counter Two");

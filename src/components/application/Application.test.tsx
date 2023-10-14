@@ -18,7 +18,7 @@ describe("Application", () => {
   describe("Check Elements", () => {
     test("Check Form", () => {
       render(<Application />);
-      const isForm = screen.getByRole("form");
+      const isForm = screen.getByTestId("form-section");
       expect(isForm).toBeInTheDocument();
     });
     test("Check inputs", () => {
@@ -63,6 +63,11 @@ describe("Application", () => {
       render(<Application />);
       const isTestId = screen.getByTestId("custom-element");
       expect(isTestId).toBeInTheDocument();
+    });
+    test("check button", () => {
+      render(<Application />);
+      const isButton = screen.getByRole("button");
+      expect(isButton).toBeDisabled();
     });
   });
 });

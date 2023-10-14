@@ -1,4 +1,4 @@
-import { logRoles, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { Skills } from "./Skill";
 
 describe("Skills", () => {
@@ -33,7 +33,7 @@ describe("Skills", () => {
     });
 
     test("Start Leaning not render findBy", async () => {
-      const view = render(<Skills skills={SkillsList} />);
+      render(<Skills skills={SkillsList} />);
       // screen.debug()
       //   logRoles(view.container);
       const isButton = await screen.findByRole(

@@ -9,7 +9,7 @@ describe("Users", () => {
     const isHeading = screen.getByRole("heading");
     expect(isHeading).toHaveTextContent("Users");
   });
-  test("test list item mock function", async () => {
+  test("User list item mock function", async () => {
     render(<Users />);
     const isListItems = await screen.findAllByRole("listitem");
     expect(isListItems).toHaveLength(3);

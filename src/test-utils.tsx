@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { render, RenderOptions } from "@testing-library/react";
 // import { ThemeProvider } from "my-ui-lib";
 // import { TranslationProvider } from "my-i18n-lib";

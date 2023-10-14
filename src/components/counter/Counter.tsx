@@ -3,7 +3,6 @@ import { useState } from "react";
 export const Counter = () => {
   const [count, setCount] = useState(0);
   const [amount, setAmount] = useState(0);
-  const [file, setFile] = useState("");
   return (
     <div>
       <h1>{count}</h1>

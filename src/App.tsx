@@ -1,9 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Application } from "./components/application/Application";
-import { Skills } from "./components/skills/Skill";
-import { Counter } from "./components/counter/Counter";
+// import { Application } from "./components/application/Application";
+// import { Skills } from "./components/skills/Skill";
+// import { Counter } from "./components/counter/Counter";
 import { AppProviders } from "./components/Provider/AppProvider";
 import { MuiMode } from "./components/mui/MuiMode";
 import { Users } from "./components/users/Users";
