@@ -14,7 +14,7 @@ export const handlers = [
         {
           name: "Princess Diana",
         },
-      ])
+      ]),
     );
   }),
 ];

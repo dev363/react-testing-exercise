@@ -43,7 +43,7 @@ describe("Skills", () => {
         },
         {
           timeout: 2000, // by Default 1000
-        }
+        },
       );
 
       expect(isButton).toBeInTheDocument();

@@ -8,6 +8,7 @@ describe("Counter Two", () => {
     const isHeading = screen.getByRole("heading");
     expect(isHeading).toHaveTextContent("Counter Two");
   });
+
   test.only("handles are called", async () => {
     userEvent.setup();
     const incrementFn = jest.fn();
@@ -17,7 +18,7 @@ describe("Counter Two", () => {
         count={0}
         handleIncrement={incrementFn}
         handleDecrement={decrementFn}
-      />
+      />,
     );
     const incrementButton = screen.getByRole("button", { name: "Increment" });
     const decrementButton = screen.getByRole("button", { name: "Decrement" });
