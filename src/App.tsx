@@ -7,6 +7,7 @@ import { AppProviders } from "./components/Provider/AppProvider";
 import { MuiMode } from "./components/mui/MuiMode";
 import { Users } from "./components/users/Users";
 import UsersListing from "./components/users/UsersListing";
+import List from "./components/AxiosTesting/List";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         {/* <Counter /> */}
         {/* <MuiMode />
          */}
-        <UsersListing />
+        {/* <UsersListing /> */}
+        <List />
       </div>
     </AppProviders>
   );
