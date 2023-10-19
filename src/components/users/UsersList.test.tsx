@@ -1,4 +1,4 @@
-import { logRoles, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { server } from "../../mocks/server";
 import { rest } from "msw";
 import UsersListing from "./UsersListing";

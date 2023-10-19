@@ -1,5 +1,5 @@
 import { Grid, TextField, Button, Container, Paper } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ScheduleList from "./ScheduleList";
 import {
   CHECKIN_TEST_ID,

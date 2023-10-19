@@ -46,8 +46,10 @@ describe("Axios Testing", () => {
     // Wait for the API call to complete and the loading state to change.
     await waitFor(() => {
       // The component should display the list of todos fetched from the mock API response.
-
       expect(screen.getByText("Todo 1")).toBeInTheDocument();
+    });
+    await waitFor(() => {
+      // The component should display the list of todos fetched from the mock API response.
       expect(screen.getByText("Todo 2")).toBeInTheDocument();
     });
   });

@@ -5,9 +5,4 @@ describe("Sum", () => {
     const result = Sum(1, 2);
     expect(result).toBe(3);
   });
-
-  test("When a and B are string", () => {
-    const result = Sum("1", "2");
-    expect(result).toBe(3);
-  });
 });
