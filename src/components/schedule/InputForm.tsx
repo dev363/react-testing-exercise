@@ -34,7 +34,6 @@ const InputForm = () => {
     if (errors) {
       alert("All Fields are Required");
     } else {
-      console.log(state);
       calculateSchedule(state.checkIn, state.checkOut);
     }
   };

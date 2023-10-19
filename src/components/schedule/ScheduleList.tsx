@@ -33,8 +33,8 @@ const ScheduleList = ({ list }: ScheduleListProps) => {
             <Fragment>
               {schedules?.map((item, i) => (
                 <TableRow key={i} data-testid="schedule-table-body-row-test-id">
-                  <TableCell>{item.date}</TableCell>
-                  <TableCell>
+                  <TableCell data-testid="schedule-date">{item.date}</TableCell>
+                  <TableCell data-testid="schedule-name">
                     <Stack direction="row" spacing={1}>
                       {item?.name?.map((name: string, j) => {
                         return (
